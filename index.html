@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Louis Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cce79c9bde.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer Student</p>
+                <h1>Hi, I'm Mark Louis</h1>
+            </div>
+        </div>
+    </div>
+
+<!--------------- about --------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/portraitpicture-removebg.png">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Mark Louis Prestoza Llena, a third year Bachelor of Science in Information Technology - Web Development student. 
+                   I was born in 2003, raised in a town of Pangasinan called Mangaldan. Since my early encountered with technology, I've always been entertained to use it and 
+                   facinated on how it works. I can say I have witnessed the continious evolution and updates of the online platforms that's been in the online market
+                   since I was a kid. Technology has been one of the biggest contribution in our world today, it's always been a part of the society whether it's about education, 
+                   business, or personal and that's one of the main reason I took BS Information Technology to help me widen my knowledge and I believe through this platform 
+                   we can help other people also. 
+                </p>
+
+                <div class="tab-titles">
+                   
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+               
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                       <li><span>Web Development:</span><br></li>
+                       <li><span>C++</span><br></li>
+                       <li><span>HTML</span><br></li>
+                       <li><span>CSS</span><br></li>
+                       <li><span>JavaScript</span><br></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Online Games</span><br>League of Legends, Farlight, etc.</li>
+                        <li><span>Motorsport</span><br>Formula 1, MotoGP, WEC, etc.</li>
+                        <li><span>Sports</span><br>Basketball, Biking, etc.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------- education --------------->
+
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+                <div class="education-list">
+                <div>
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2>College</h2>
+                <p>First Year to Third Year(Currently):<br>Bachelor of Science in Information of Technology<br>School: Phinma University of Pangasinan</p>
+                </div>
+                
+                <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <h2>Senior High School</h2>
+                <p>Eleventh Grade and Twelfth Grade:<br>Accountancy and Business Management<br>School: Phinma University of Pangasinan</p>
+                </div>
+            
+                <div>
+                <i class="fa-solid fa-person"></i>
+                <h2>Junior High School</h2>
+                <p>Seventh Grade to Tenth Grade<br>School: Santo Tomas Catholic School</p>
+                </div>
+            
+                <div>
+                <i class="fa-solid fa-child"></i>
+                <h2>Elementary</h2>
+                <p>First Grade to Sixth Grade<br>School: United Methodist Church Cinderella School</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------- portfolio --------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                <div class="work">
+                <img src="images/works.jpg">
+                <div class="layer">
+                    <h3>Kahit Ano Website</h3>
+                    <p>we created a food website that shows the ingredients and helps the cooker<br> to choose what recipe they will cook.</p>
+                </div>
+                </div>
+
+                <div class="work">
+                <img src="images/works2.jpg">
+                <div class="layer">
+                    <h3>Java Tutorial Application</h3>
+                    <p>we created a Java tutorial application that helps the students to learn<br> the basic fundamentals of Java.</p>
+                </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+<!--------------- contact --------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i></i>arpr.llena.up@phinmaed.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>09089807394</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100075433463011&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mlouispl/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required> 
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx7TUHTmAfPdLVQ7vsABLeI7mJHee0bZkdCg0uzX8Jvcq4GsIe3jPFNY0_nbr4tCGYDEg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully"
+                            setTimeout(function(){
+                                msg.innerHTML = ""
+                            },5000)
+                        form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
